@@ -1,0 +1,5 @@
+package survey.springboot.restapi.surveyrestapi.security;
+
+public class SecurityConfig {
+
+}

@@ -1,0 +1,5 @@
+package survey.springboot.restapi.surveyrestapi.controller;
+
+public class SurveyController {
+
+}

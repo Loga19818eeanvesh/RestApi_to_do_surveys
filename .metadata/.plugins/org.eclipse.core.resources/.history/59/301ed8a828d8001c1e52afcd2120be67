@@ -1,0 +1,3 @@
+server.port=2803
+logging.level.org.springframework.web: DEBUG
+welcome.message: Welcome to your first Spring Boot app!

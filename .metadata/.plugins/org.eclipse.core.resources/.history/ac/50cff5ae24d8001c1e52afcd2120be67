@@ -1,0 +1,5 @@
+package survey.springboot.restapi.surveyrestapi.jpa;
+
+public class UserCommandLineRunner {
+
+}

@@ -1,0 +1,14 @@
+package survey.springboot.restapi.surveyrestapi.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import survey.springboot.restapi.surveyrestapi.service.SurveyService;
+
+@Controller
+public class SurveyController {
+
+	@Autowired
+	private SurveyService surveyService;
+	
+}

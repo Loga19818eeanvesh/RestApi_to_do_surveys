@@ -1,0 +1,18 @@
+package survey.springboot.restapi.surveyrestapi;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+@RestController
+public class WelcomeController {
+
+	@Autowired
+	private WelcomeService service;
+
+	@RequestMapping("/welcome")
+	public String welcome() {
+		return service.retrieveWelcomeMessage();
+	}
+	
+}

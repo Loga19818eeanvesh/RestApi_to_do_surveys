@@ -1,0 +1,24 @@
+package survey.springboot.restapi.surveyrestapi.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import survey.springboot.restapi.surveyrestapi.model.Question;
+import survey.springboot.restapi.surveyrestapi.service.SurveyService;
+
+@RestController
+public class SurveyController {
+
+	@Autowired
+	private SurveyService surveyService;
+	
+	@GetMapping("/surveys/{surveyId}/questions")
+	public List<Question> retrieveQuestions(@PathVariable String surveyId){
+		return surveyService.retrieveQuestions(surveyId);
+	}
+	
+}
